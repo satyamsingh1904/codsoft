@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Satyam Singh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Satyam Singh</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="https://drive.google.com/file/d/1u5N7ZSx-o21Ng4lVVIx2BIoJPVwgQDfJ/view?usp=drive_link" target="_blank">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Satyam Singh</h1>
+      <p>B.Tech Student | Web Developer | Data Analytics Enthusiast</p>
+      <button class="hire-btn" onclick="openForm()">Hire Me</button>
+    </div>
+    <div class="hero-img-container">
+      <img src="satyam cod.png" alt="Satyam Singh" class="hero-img">
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a B.Tech student with a strong interest in web development, problem-solving, and data analytics. I have practical experience in HTML, CSS, JavaScript, and a good foundation in Data Structures & Algorithms.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+      <li>Python</li>
+      <li>Data Analytics</li>
+    </ul>
+  </section>
+
+  <!-- Works / Projects -->
+  <section id="works" class="works">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-item">
+        <h3>Expense Tracker</h3>
+        <p>A web app to track daily expenses with nice UI.</p>
+      </div>
+      <div class="project-item">
+        <h3>Weather Prediction</h3>
+        <p>App using API to show real-time weather data.</p>
+      </div>
+      <!-- you can add more project items similarly -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p><strong>Phone: </strong> +91 9415897156</p>
+  </section>
+
+  <!-- Hire Me Form Popup -->
+  <div class="form-popup" id="hireForm">
+    <form class="form-container" onsubmit="submitForm(event)">
+      <h2>Hire Me</h2>
+      <input type="text" id="name" placeholder="Your Name" required />
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <p><strong>Phone:</strong> +91 9415897156</p>
+      <button type="submit" class="btn">Submit</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 Satyam Singh</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
